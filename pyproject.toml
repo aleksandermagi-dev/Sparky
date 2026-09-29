@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparky-skyrim"
+version = "0.1.0"
+description = "A cautious Skyrim SE plugin-space assistant and Trainwreck crash translator"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Sparky"}]
+
+[project.scripts]
+sparky = "sparky.cli:main"
+sparky-gui = "sparky.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["sparky*"]
+
