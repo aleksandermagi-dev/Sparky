@@ -4,7 +4,7 @@ Sparky is a Windows desktop companion for Skyrim Special Edition and Vortex. It 
 
 ## Start
 
-Run `dist/Sparky-0.6.exe` or double-click `run_sparky.bat`. From source, run `python -m sparky.gui` with Python 3.10 or newer.
+Run the uploaded `Sparky-0.6.exe` at the repository root, or double-click `run_sparky.bat`. Local builds can also be launched from `dist/Sparky-0.6.exe`. From source, run `python -m sparky.gui` with Python 3.10 or newer.
 
 Version 0.6 evaluates pure overrides independently of merge restrictions: associated BSAs, dependent plugins, nested groups, and record types no longer disqualify a flag-only copy. Missing masters and detected VMAD script data prevent automatic flagging; new records require review. XP32 remains protected. See [xEdit's patch flagging guidance](https://tes5edit.github.io/docs/8-managing-mod-files.html#8104---adding-the-esl-flag-for-mod-users). Eligibility is not in-game validation.
 
@@ -49,7 +49,7 @@ python -m unittest discover -s tests -v
 To package a Windows executable, install PyInstaller in your build environment and run:
 
 ```powershell
-python -m PyInstaller --noconfirm --clean --onefile --windowed --name Sparky-0.2 launcher.py
+python -m PyInstaller --noconfirm --clean --onefile --windowed --name Sparky-0.6 launcher.py
 ```
 
 The repository includes `launcher.py` for packaging.
