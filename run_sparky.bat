@@ -4,6 +4,10 @@ if exist "%~dp0dist\Sparky-0.6.exe" (
   start "" "%~dp0dist\Sparky-0.6.exe"
   exit /b 0
 )
+if exist "%~dp0Sparky-0.6.exe" (
+  start "" "%~dp0Sparky-0.6.exe"
+  exit /b 0
+)
 if exist "%~dp0dist\Sparky-0.5.exe" (
   start "" "%~dp0dist\Sparky-0.5.exe"
   exit /b 0
